@@ -22,6 +22,8 @@
 		D35ACA9318BFD4AB007A4FE4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35ACA7718BFD4AB007A4FE4 /* CoreData.framework */; };
 		D35ACA9B18BFD4AB007A4FE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D35ACA9918BFD4AB007A4FE4 /* InfoPlist.strings */; };
 		D35ACA9D18BFD4AB007A4FE4 /* Thousand_WordsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D35ACA9C18BFD4AB007A4FE4 /* Thousand_WordsTests.m */; };
+		D35ACAA718BFD9EE007A4FE4 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D35ACAA618BFD9EE007A4FE4 /* Storyboard.storyboard */; };
+		D35ACAAA18BFDAB3007A4FE4 /* FMAlbumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35ACAA918BFDAB3007A4FE4 /* FMAlbumTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		D35ACA9818BFD4AB007A4FE4 /* Thousand WordsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Thousand WordsTests-Info.plist"; sourceTree = "<group>"; };
 		D35ACA9A18BFD4AB007A4FE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D35ACA9C18BFD4AB007A4FE4 /* Thousand_WordsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Thousand_WordsTests.m; sourceTree = "<group>"; };
+		D35ACAA618BFD9EE007A4FE4 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		D35ACAA818BFDAB3007A4FE4 /* FMAlbumTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMAlbumTableViewController.h; sourceTree = "<group>"; };
+		D35ACAA918BFDAB3007A4FE4 /* FMAlbumTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMAlbumTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,11 +120,12 @@
 		D35ACA7918BFD4AB007A4FE4 /* Thousand Words */ = {
 			isa = PBXGroup;
 			children = (
-				D35ACA8218BFD4AB007A4FE4 /* FMAppDelegate.h */,
-				D35ACA8318BFD4AB007A4FE4 /* FMAppDelegate.m */,
+				D35ACAA618BFD9EE007A4FE4 /* Storyboard.storyboard */,
 				D35ACA8818BFD4AB007A4FE4 /* Images.xcassets */,
 				D35ACA8518BFD4AB007A4FE4 /* Thousand_Words.xcdatamodeld */,
 				D35ACA7A18BFD4AB007A4FE4 /* Supporting Files */,
+				D35ACAA818BFDAB3007A4FE4 /* FMAlbumTableViewController.h */,
+				D35ACAA918BFDAB3007A4FE4 /* FMAlbumTableViewController.m */,
 			);
 			path = "Thousand Words";
 			sourceTree = "<group>";
@@ -130,6 +136,8 @@
 				D35ACA7B18BFD4AB007A4FE4 /* Thousand Words-Info.plist */,
 				D35ACA7C18BFD4AB007A4FE4 /* InfoPlist.strings */,
 				D35ACA7F18BFD4AB007A4FE4 /* main.m */,
+				D35ACA8218BFD4AB007A4FE4 /* FMAppDelegate.h */,
+				D35ACA8318BFD4AB007A4FE4 /* FMAppDelegate.m */,
 				D35ACA8118BFD4AB007A4FE4 /* Thousand Words-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -231,6 +239,7 @@
 			files = (
 				D35ACA7E18BFD4AB007A4FE4 /* InfoPlist.strings in Resources */,
 				D35ACA8918BFD4AB007A4FE4 /* Images.xcassets in Resources */,
+				D35ACAA718BFD9EE007A4FE4 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +260,7 @@
 			files = (
 				D35ACA8018BFD4AB007A4FE4 /* main.m in Sources */,
 				D35ACA8418BFD4AB007A4FE4 /* FMAppDelegate.m in Sources */,
+				D35ACAAA18BFDAB3007A4FE4 /* FMAlbumTableViewController.m in Sources */,
 				D35ACA8718BFD4AB007A4FE4 /* Thousand_Words.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
