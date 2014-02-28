@@ -1,19 +1,19 @@
 //
-//  Album.m
+//  Photo.m
 //  Thousand Words
 //
 //  Created by Fredrick Myers on 2/28/14.
 //  Copyright (c) 2014 Fredrick Myers. All rights reserved.
 //
 
-#import "Album.h"
 #import "Photo.h"
+#import "Album.h"
 
 
-@implementation Album
+@implementation Photo
 
-@dynamic name;
+@dynamic image;
 @dynamic date;
-@dynamic photos;
+@dynamic albumBook;
 
 @end

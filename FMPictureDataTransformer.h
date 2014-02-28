@@ -1,19 +1,13 @@
 //
-//  Album.m
+//  FMPictureDataTransformer.h
 //  Thousand Words
 //
 //  Created by Fredrick Myers on 2/28/14.
 //  Copyright (c) 2014 Fredrick Myers. All rights reserved.
 //
 
-#import "Album.h"
-#import "Photo.h"
+#import <Foundation/Foundation.h>
 
-
-@implementation Album
-
-@dynamic name;
-@dynamic date;
-@dynamic photos;
+@interface FMPictureDataTransformer : NSValueTransformer
 
 @end

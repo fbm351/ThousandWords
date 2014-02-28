@@ -10,4 +10,6 @@
 
 @interface FMPhotosCollectionViewController : UICollectionViewController
 
+- (IBAction)cameraBarButtonItemPressed:(UIBarButtonItem *)sender;
+
 @end
