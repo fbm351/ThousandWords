@@ -25,6 +25,10 @@
 		D35ACAA718BFD9EE007A4FE4 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D35ACAA618BFD9EE007A4FE4 /* Storyboard.storyboard */; };
 		D35ACAAA18BFDAB3007A4FE4 /* FMAlbumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35ACAA918BFDAB3007A4FE4 /* FMAlbumTableViewController.m */; };
 		D35ACAAD18BFE5DD007A4FE4 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = D35ACAAC18BFE5DD007A4FE4 /* Album.m */; };
+		D35ACAB118C0C620007A4FE4 /* FMCoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D35ACAB018C0C620007A4FE4 /* FMCoreDataHelper.m */; };
+		D35ACAB418C0D0A7007A4FE4 /* FMPhotosCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35ACAB318C0D0A7007A4FE4 /* FMPhotosCollectionViewController.m */; };
+		D35ACAB718C0D2CE007A4FE4 /* FMPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D35ACAB618C0D2CE007A4FE4 /* FMPhotoCollectionViewCell.m */; };
+		D35ACABB18C0D644007A4FE4 /* Image.png in Resources */ = {isa = PBXBuildFile; fileRef = D35ACABA18C0D644007A4FE4 /* Image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,13 @@
 		D35ACAA918BFDAB3007A4FE4 /* FMAlbumTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMAlbumTableViewController.m; sourceTree = "<group>"; };
 		D35ACAAB18BFE5DD007A4FE4 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
 		D35ACAAC18BFE5DD007A4FE4 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		D35ACAAF18C0C620007A4FE4 /* FMCoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMCoreDataHelper.h; sourceTree = "<group>"; };
+		D35ACAB018C0C620007A4FE4 /* FMCoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMCoreDataHelper.m; sourceTree = "<group>"; };
+		D35ACAB218C0D0A7007A4FE4 /* FMPhotosCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMPhotosCollectionViewController.h; sourceTree = "<group>"; };
+		D35ACAB318C0D0A7007A4FE4 /* FMPhotosCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMPhotosCollectionViewController.m; sourceTree = "<group>"; };
+		D35ACAB518C0D2CE007A4FE4 /* FMPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		D35ACAB618C0D2CE007A4FE4 /* FMPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		D35ACABA18C0D644007A4FE4 /* Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +137,12 @@
 				D35ACAA618BFD9EE007A4FE4 /* Storyboard.storyboard */,
 				D35ACAA818BFDAB3007A4FE4 /* FMAlbumTableViewController.h */,
 				D35ACAA918BFDAB3007A4FE4 /* FMAlbumTableViewController.m */,
+				D35ACAB218C0D0A7007A4FE4 /* FMPhotosCollectionViewController.h */,
+				D35ACAB318C0D0A7007A4FE4 /* FMPhotosCollectionViewController.m */,
+				D35ACAB518C0D2CE007A4FE4 /* FMPhotoCollectionViewCell.h */,
+				D35ACAB618C0D2CE007A4FE4 /* FMPhotoCollectionViewCell.m */,
+				D35ACAAF18C0C620007A4FE4 /* FMCoreDataHelper.h */,
+				D35ACAB018C0C620007A4FE4 /* FMCoreDataHelper.m */,
 				D35ACA8818BFD4AB007A4FE4 /* Images.xcassets */,
 				D35ACA7A18BFD4AB007A4FE4 /* Supporting Files */,
 			);
@@ -138,6 +155,7 @@
 				D35ACAAE18BFE5EF007A4FE4 /* Model */,
 				D35ACA7B18BFD4AB007A4FE4 /* Thousand Words-Info.plist */,
 				D35ACA7C18BFD4AB007A4FE4 /* InfoPlist.strings */,
+				D35ACABA18C0D644007A4FE4 /* Image.png */,
 				D35ACA7F18BFD4AB007A4FE4 /* main.m */,
 				D35ACA8218BFD4AB007A4FE4 /* FMAppDelegate.h */,
 				D35ACA8318BFD4AB007A4FE4 /* FMAppDelegate.m */,
@@ -250,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D35ACABB18C0D644007A4FE4 /* Image.png in Resources */,
 				D35ACA7E18BFD4AB007A4FE4 /* InfoPlist.strings in Resources */,
 				D35ACA8918BFD4AB007A4FE4 /* Images.xcassets in Resources */,
 				D35ACAA718BFD9EE007A4FE4 /* Storyboard.storyboard in Resources */,
@@ -273,9 +292,12 @@
 			files = (
 				D35ACA8018BFD4AB007A4FE4 /* main.m in Sources */,
 				D35ACA8418BFD4AB007A4FE4 /* FMAppDelegate.m in Sources */,
+				D35ACAB718C0D2CE007A4FE4 /* FMPhotoCollectionViewCell.m in Sources */,
 				D35ACAAA18BFDAB3007A4FE4 /* FMAlbumTableViewController.m in Sources */,
 				D35ACAAD18BFE5DD007A4FE4 /* Album.m in Sources */,
 				D35ACA8718BFD4AB007A4FE4 /* Thousand_Words.xcdatamodeld in Sources */,
+				D35ACAB418C0D0A7007A4FE4 /* FMPhotosCollectionViewController.m in Sources */,
+				D35ACAB118C0C620007A4FE4 /* FMCoreDataHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

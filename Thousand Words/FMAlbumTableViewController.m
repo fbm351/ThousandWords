@@ -8,6 +8,7 @@
 
 #import "FMAlbumTableViewController.h"
 #import "Album.h"
+#import "FMCoreDataHelper.h"
 
 @interface FMAlbumTableViewController () <UIAlertViewDelegate>
 
@@ -42,6 +43,22 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Album"];
+    fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"date" ascending:YES]];
+    
+    
+    
+    NSError *error = nil;
+    
+    NSArray *fetchedAlbums = [[FMCoreDataHelper managedObjectContext] executeFetchRequest:fetchRequest error:&error];
+    self.albums = [fetchedAlbums mutableCopy];
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -79,6 +96,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
+    Album *selectedAlbum = [self.albums objectAtIndex:indexPath.row];
+    cell.textLabel.text = selectedAlbum.name;
     
     return cell;
 }
@@ -141,7 +160,8 @@
     if (buttonIndex == 1)
     {
         NSString *alertText = [alertView textFieldAtIndex:0].text;
-        NSLog(@"My New Album is %@", alertText);
+        [self.albums addObject:[self albumWithName:alertText]];
+        [self.tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:[self.albums count] - 1 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
     }
 }
 
@@ -149,8 +169,8 @@
 
 - (Album *)albumWithName:(NSString *)name
 {
-    id delegate = [[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext *context = [delegate managedObjectContext];
+    
+    NSManagedObjectContext *context = [FMCoreDataHelper managedObjectContext];
     
     Album *album = [NSEntityDescription insertNewObjectForEntityForName:@"Album" inManagedObjectContext:context];
     album.name = name;
