@@ -9,6 +9,8 @@
 #import "FMAlbumTableViewController.h"
 #import "Album.h"
 #import "FMCoreDataHelper.h"
+#import "FMPhotosCollectionViewController.h"
+#define TO_PHOTO_COLLECTION_VIEW_CONTROLLER @"toPhotoCollectionViewController"
 
 @interface FMAlbumTableViewController () <UIAlertViewDelegate>
 
@@ -141,17 +143,18 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
-// In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:TO_PHOTO_COLLECTION_VIEW_CONTROLLER]) {
+        FMPhotosCollectionViewController *photoCollectionVC = segue.destinationViewController;
+        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+        photoCollectionVC.album = self.albums[path.row];
+    }
 }
 
- */
 
 #pragma mark - UIAlertViewDelegate
 

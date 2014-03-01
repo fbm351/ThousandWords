@@ -21,7 +21,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="yFN-r2-sTi" kind="push" id="ewC-Xr-5B4"/>
+                                    <segue destination="yFN-r2-sTi" kind="push" identifier="toPhotoCollectionViewController" id="ewC-Xr-5B4"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -64,6 +64,9 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <segue destination="Le4-mI-1Ye" kind="push" id="09a-aM-RI1"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -82,6 +85,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8YU-qR-6P8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1222" y="70"/>
+        </scene>
+        <!--Photo Detail View Controller-->
+        <scene sceneID="Ucn-pr-wxX">
+            <objects>
+                <viewController id="Le4-mI-1Ye" customClass="FMPhotoDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vVe-TH-PKQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="inn-bf-Do6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Noe-HX-jOM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6gR-B5-nwv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AxW-rm-ePL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1648" y="70"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="m7l-5e-XN4">
