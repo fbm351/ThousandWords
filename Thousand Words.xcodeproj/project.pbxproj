@@ -144,14 +144,14 @@
 			isa = PBXGroup;
 			children = (
 				D35ACAA618BFD9EE007A4FE4 /* Storyboard.storyboard */,
-				D35ACAC518C1287C007A4FE4 /* FMPhotoDetailViewController.h */,
-				D35ACAC618C1287C007A4FE4 /* FMPhotoDetailViewController.m */,
 				D35ACAA818BFDAB3007A4FE4 /* FMAlbumTableViewController.h */,
 				D35ACAA918BFDAB3007A4FE4 /* FMAlbumTableViewController.m */,
 				D35ACAB218C0D0A7007A4FE4 /* FMPhotosCollectionViewController.h */,
 				D35ACAB318C0D0A7007A4FE4 /* FMPhotosCollectionViewController.m */,
 				D35ACAB518C0D2CE007A4FE4 /* FMPhotoCollectionViewCell.h */,
 				D35ACAB618C0D2CE007A4FE4 /* FMPhotoCollectionViewCell.m */,
+				D35ACAC518C1287C007A4FE4 /* FMPhotoDetailViewController.h */,
+				D35ACAC618C1287C007A4FE4 /* FMPhotoDetailViewController.m */,
 				D35ACAAF18C0C620007A4FE4 /* FMCoreDataHelper.h */,
 				D35ACAB018C0C620007A4FE4 /* FMCoreDataHelper.m */,
 				D35ACAAE18BFE5EF007A4FE4 /* CoreData */,
@@ -516,6 +516,7 @@
 				D35ACAA218BFD4AB007A4FE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D35ACAA318BFD4AB007A4FE4 /* Build configuration list for PBXNativeTarget "Thousand WordsTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +525,7 @@
 				D35ACAA518BFD4AB007A4FE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

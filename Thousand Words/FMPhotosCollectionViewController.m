@@ -11,6 +11,9 @@
 #import "Photo.h"
 #import "FMPictureDataTransformer.h"
 #import "FMCoreDataHelper.h"
+#import "FMPhotoDetailViewController.h"
+#define TO_PHOTO_DETAIL_VIEW @"toPhotoDetailViewController"
+
 
 @interface FMPhotosCollectionViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
@@ -41,10 +44,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
     NSSet *unorderedPhotos = self.album.photos;
     NSSortDescriptor *dateDescripter = [NSSortDescriptor sortDescriptorWithKey:@"date" ascending:YES];
     NSArray *sortedPhotos = [unorderedPhotos sortedArrayUsingDescriptors:@[dateDescripter]];
     self.photos = [sortedPhotos mutableCopy];
+    
+    [self.collectionView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -125,6 +137,19 @@
         NSLog(@"%@", error);
     }
     return photo;
+}
+
+#pragma mark - Navigation Helpers
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:TO_PHOTO_DETAIL_VIEW])
+    {
+        FMPhotoDetailViewController *targetVC = segue.destinationViewController;
+        NSIndexPath *path = [[self.collectionView indexPathsForSelectedItems] lastObject];
+        Photo *selectedPhoto = self.photos[path.row];
+        targetVC.photo = selectedPhoto;
+    }
 }
 
 
