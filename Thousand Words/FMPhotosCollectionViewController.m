@@ -123,6 +123,19 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+#pragma mark - Navigation
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:TO_PHOTO_DETAIL_VIEW])
+    {
+        FMPhotoDetailViewController *targetVC = segue.destinationViewController;
+        NSIndexPath *path = [[self.collectionView indexPathsForSelectedItems] lastObject];
+        Photo *selectedPhoto = self.photos[path.row];
+        targetVC.photo = selectedPhoto;
+    }
+}
+
 #pragma mark - Helper Methods
 - (Photo *)photoFromImage:(UIImage *)image
 {
@@ -137,19 +150,6 @@
         NSLog(@"%@", error);
     }
     return photo;
-}
-
-#pragma mark - Navigation Helpers
-
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:TO_PHOTO_DETAIL_VIEW])
-    {
-        FMPhotoDetailViewController *targetVC = segue.destinationViewController;
-        NSIndexPath *path = [[self.collectionView indexPathsForSelectedItems] lastObject];
-        Photo *selectedPhoto = self.photos[path.row];
-        targetVC.photo = selectedPhoto;
-    }
 }
 
 

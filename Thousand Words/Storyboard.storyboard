@@ -110,6 +110,7 @@
                                 </state>
                                 <connections>
                                     <action selector="addFilterButtonPressed:" destination="Le4-mI-1Ye" eventType="touchUpInside" id="h59-8z-xwT"/>
+                                    <segue destination="mj6-XO-kJD" kind="push" identifier="toFilterViewController" id="ni6-go-Q6s"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7n-mk-WoG">
@@ -133,6 +134,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AxW-rm-ePL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1648" y="70"/>
+        </scene>
+        <!--Filter Collection View Controller-->
+        <scene sceneID="UNd-Bw-ikt">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="mj6-XO-kJD" customClass="FMFilterCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="Bzx-iO-l9b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6RJ-dX-e6I">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gXn-fI-qH7">
+                                <rect key="frame" x="0.0" y="64" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="mj6-XO-kJD" id="b6Q-89-6dw"/>
+                            <outlet property="delegate" destination="mj6-XO-kJD" id="Hah-i0-Cue"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="5C3-Ur-efI"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b1W-Ib-v1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2065" y="70"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="m7l-5e-XN4">

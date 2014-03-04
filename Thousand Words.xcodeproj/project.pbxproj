@@ -32,6 +32,7 @@
 		D35ACAC118C0E948007A4FE4 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = D35ACAC018C0E948007A4FE4 /* Album.m */; };
 		D35ACAC418C0EDE8007A4FE4 /* FMPictureDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = D35ACAC318C0EDE8007A4FE4 /* FMPictureDataTransformer.m */; };
 		D35ACAC718C1287D007A4FE4 /* FMPhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35ACAC618C1287C007A4FE4 /* FMPhotoDetailViewController.m */; };
+		D3FB882218C61C17008F7D2B /* FMFilterCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FB882118C61C17008F7D2B /* FMFilterCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,8 @@
 		D35ACAC318C0EDE8007A4FE4 /* FMPictureDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMPictureDataTransformer.m; path = ../FMPictureDataTransformer.m; sourceTree = "<group>"; };
 		D35ACAC518C1287C007A4FE4 /* FMPhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMPhotoDetailViewController.h; sourceTree = "<group>"; };
 		D35ACAC618C1287C007A4FE4 /* FMPhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMPhotoDetailViewController.m; sourceTree = "<group>"; };
+		D3FB882018C61C17008F7D2B /* FMFilterCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMFilterCollectionViewController.h; sourceTree = "<group>"; };
+		D3FB882118C61C17008F7D2B /* FMFilterCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMFilterCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,8 @@
 				D35ACAB618C0D2CE007A4FE4 /* FMPhotoCollectionViewCell.m */,
 				D35ACAC518C1287C007A4FE4 /* FMPhotoDetailViewController.h */,
 				D35ACAC618C1287C007A4FE4 /* FMPhotoDetailViewController.m */,
+				D3FB882018C61C17008F7D2B /* FMFilterCollectionViewController.h */,
+				D3FB882118C61C17008F7D2B /* FMFilterCollectionViewController.m */,
 				D35ACAAF18C0C620007A4FE4 /* FMCoreDataHelper.h */,
 				D35ACAB018C0C620007A4FE4 /* FMCoreDataHelper.m */,
 				D35ACAAE18BFE5EF007A4FE4 /* CoreData */,
@@ -306,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D35ACA8018BFD4AB007A4FE4 /* main.m in Sources */,
+				D3FB882218C61C17008F7D2B /* FMFilterCollectionViewController.m in Sources */,
 				D35ACA8418BFD4AB007A4FE4 /* FMAppDelegate.m in Sources */,
 				D35ACAC718C1287D007A4FE4 /* FMPhotoDetailViewController.m in Sources */,
 				D35ACAB718C0D2CE007A4FE4 /* FMPhotoCollectionViewCell.m in Sources */,

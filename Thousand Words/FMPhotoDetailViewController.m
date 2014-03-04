@@ -8,6 +8,9 @@
 
 #import "FMPhotoDetailViewController.h"
 #import "Photo.h"
+#import "FMFilterCollectionViewController.h"
+#define TO_FILTER_VIEW @"toFilterViewController"
+
 
 @interface FMPhotoDetailViewController ()
 
@@ -58,5 +61,20 @@
     
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+#pragma mark - Navigation
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:TO_FILTER_VIEW])
+    {
+        FMFilterCollectionViewController *targetVC = segue.destinationViewController;
+        targetVC.photo = self.photo;
+    }
+}
+
+
+
+
 
 @end
